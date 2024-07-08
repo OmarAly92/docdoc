@@ -1,5 +1,5 @@
 
 abstract class RoutesPath  {
-  static const String onBoardingScreen = '/onBoardingScreen';
-  static const String loginScreen = '/loginScreen';
+  static const String onBoardingView = '/';
+  static const String loginView = '/loginView';
 }
