@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:docdoc/core/routing/app_routes.dart';
 import 'package:docdoc/core/theming/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,8 @@ class DocApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        locale: DevicePreview.locale(context),
+        builder: DevicePreview.appBuilder,
         debugShowCheckedModeBanner: false,
         title: 'Doc App',
         onGenerateRoute: appRoutes.generateRoute,

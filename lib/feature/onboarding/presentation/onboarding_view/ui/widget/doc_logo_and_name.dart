@@ -1,5 +1,7 @@
 import 'package:docdoc/core/theming/app_text_style.dart';
 import 'package:docdoc/core/utils/app_image.dart';
+import 'package:docdoc/core/utils/app_strings.dart';
+import 'package:docdoc/core/widget/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -11,13 +13,18 @@ class DocLogoAndName extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset(AppImage.docIcon),
+        SizedBox(
+          child: SvgPicture.asset(
+            width: 38,
+            height: 38,
+            AppImage.docIcon,
+          ),
+        ),
+        const Gap(8),
         Text(
-          'DocDoc',
+          AppStrings.appName,
           style: AppTextStyle.font24Black700Weight,
         ),
-        const SizedBox(width: 10),
-        SvgPicture.asset(AppImage.onboardingBackground),
       ],
     );
   }

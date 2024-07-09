@@ -35,6 +35,8 @@ dependencies:
   flutter_svg: ^2.0.9
   # for adapting screen and font size.
   flutter_screenutil: ^5.9.0
+  # Approximate how your Flutter app looks and performs on another device.
+  device_preview: ^1.1.0
 
 dev_dependencies:
   flutter_test:

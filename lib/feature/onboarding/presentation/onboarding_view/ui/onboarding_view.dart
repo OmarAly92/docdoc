@@ -1,4 +1,7 @@
+import 'package:docdoc/core/widget/gap.dart';
 import 'package:docdoc/feature/onboarding/presentation/onboarding_view/ui/widget/doc_logo_and_name.dart';
+import 'package:docdoc/feature/onboarding/presentation/onboarding_view/ui/widget/doctor_image_and_text.dart';
+import 'package:docdoc/feature/onboarding/presentation/onboarding_view/ui/widget/onboarding_text_and_button.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -11,9 +14,11 @@ class OnboardingView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 22),
+              Gap(22),
               DocLogoAndName(),
-              SizedBox(height: 40),
+              Gap(40),
+              DoctorImageAndText(),
+              OnboardingTextAndButton(),
             ],
           ),
         ),
