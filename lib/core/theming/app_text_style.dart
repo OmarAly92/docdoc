@@ -22,7 +22,7 @@ abstract class AppTextStyle {
   );
 
   static TextStyle font16WhiteSemiBold = TextStyle(
-    fontSize: 16.sp,
+    fontSize: 16.spMin,
     fontWeight: FontWeight.w500,
     color: Colors.white,
   );
