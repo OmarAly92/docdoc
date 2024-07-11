@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class AppRoutes {
   Route generateRoute(RouteSettings settings) {
+
     final arguments = settings.arguments;
     switch (settings.name) {
       case RoutesPath.onBoardingScreen:
