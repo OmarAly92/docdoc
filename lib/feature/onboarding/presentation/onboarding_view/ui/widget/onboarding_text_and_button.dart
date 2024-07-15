@@ -1,3 +1,5 @@
+import 'package:docdoc/core/helpers/extension.dart';
+import 'package:docdoc/core/routing/routes_strings.dart';
 import 'package:docdoc/core/theming/app_text_style.dart';
 import 'package:docdoc/core/utils/translation_key.dart';
 import 'package:docdoc/core/widget/gap.dart';
@@ -20,11 +22,13 @@ class OnboardingTextAndButton extends StatelessWidget {
             style: AppTextStyle.font13GrayRegular,
           ),
         ),
-        const Gap(32),
+        const AppGap(32),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32),
           child: GetStartedButton(
-            onPressed: () {},
+            onPressed: () {
+              context.pushNamed(RoutesStrings.loginView);
+            },
             title: 'Get Started',
           ),
         )

@@ -37,6 +37,8 @@ dependencies:
   flutter_screenutil: ^5.9.0
   # Approximate how your Flutter app looks and performs on another device.
   device_preview: ^1.1.0
+  # Flutter widgets for easily adding gaps inside Flex widgets such as Columns and Rows or scrolling views.
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
