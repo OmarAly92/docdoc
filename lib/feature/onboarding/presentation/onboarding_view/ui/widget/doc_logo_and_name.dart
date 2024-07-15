@@ -20,10 +20,10 @@ class DocLogoAndName extends StatelessWidget {
             AppImage.docIcon,
           ),
         ),
-        const Gap(8),
+        const AppGap(8),
         Text(
           AppStrings.appName,
-          style: AppTextStyle.font24Black700Weight,
+          style: AppTextStyle.font24BlackBold,
         ),
       ],
     );

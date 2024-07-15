@@ -27,7 +27,7 @@ class GetStartedButton extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(16)),
                   ),
                   minimumSize: const Size(double.infinity, 52)),
-              onPressed: () {},
+              onPressed: onPressed,
               child: Text(
                 title,
                 style: AppTextStyle.font16WhiteSemiBold,

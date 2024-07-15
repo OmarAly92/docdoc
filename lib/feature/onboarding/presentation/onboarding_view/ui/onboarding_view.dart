@@ -14,9 +14,9 @@ class OnboardingView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Gap(22),
+              AppGap(22),
               DocLogoAndName(),
-              Gap(40),
+              AppGap(40),
               DoctorImageAndText(),
               OnboardingTextAndButton(),
             ],
