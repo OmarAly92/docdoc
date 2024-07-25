@@ -4,7 +4,6 @@ import 'package:docdoc/core/widget/app_text_form_field.dart';
 import 'package:docdoc/core/widget/spacing.dart';
 import 'package:docdoc/feature/auth/presentation/login/ui/widget/already_have_account_text.dart';
 import 'package:docdoc/feature/auth/presentation/login/ui/widget/terms_and_conditions_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
