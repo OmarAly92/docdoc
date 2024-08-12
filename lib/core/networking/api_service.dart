@@ -12,7 +12,7 @@ abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
 
   @POST(EndPoints.login)
-  Future<LoginResponse> getUsers(
+  Future<LoginResponse> login(
     @Body() LoginRequestBody loginRequestBody,
   );
 }

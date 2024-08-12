@@ -8,7 +8,7 @@ class DioFactory {
 
   static Dio? dio;
 
-  static Future<Dio> getDio() async {
+  static Dio getDio()  {
     const timeout = Duration(seconds: 30);
     _addDioInterceptor();
     if (dio == null) {
